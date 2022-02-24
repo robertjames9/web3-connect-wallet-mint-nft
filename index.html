@@ -1,254 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Page</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.1-rc.0/web3.min.js"
+      integrity="sha512-Ui9NE+/XdhwxssTrWetwWgpwpZJCLgTpB2dgkq+xe3O7lmZEJe+2rw3OT3YbYIUCQWH5dOO8ObLOYmbUVpPBgw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <nav class="navbar navbar-expand-md fixed-top navbar-dark ">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="header__btn order-md-last">
-                    <a href="#" class="theme-btn outline-btn">CONNECT WALLET</a>
-                </div>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">ABOUT US</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ALPHA PASS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">MINT</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-md fixed-top navbar-dark">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="header__btn order-md-last">
+            <a href="#" class="theme-btn outline-btn">CONNECT WALLET</a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ALPHA PASS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">MINT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <div class="mainbg">
-
-        <section class="banner__section">
-            <div class="banner__head">
-                <img src="img/banner-head.svg" alt="banner-header">
-            </div>
-            <div class="banner__crimeBar">
-                <a href="#">
-                    <img src="img/banner-upperbar.png" alt="banner-uppercase">
-                </a>
-            </div>
-        </section>
-        <section class="whatsup__section">
-            <div class="cross__wts__object">
-                <img src="img/cross.svg" alt="cross">
-            </div>
-            <div class="rightwts__object">
-                <img src="img/wtsright.png" alt="ong">
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="skull__whts">
-                            <img src="img/skull.png" alt="skull">
-                            <div class="tears">
-                                <img src="img/2_Tears.png" alt="tears">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="whtsupp__text">
-                            <div class="hereText">HERE'S </div>
-                            <h1>WHAT'S <span class="d-block">UP</span></h1>
-                            <p>You’re used to things being super plastic, wait till you have a taste of Super Alpha. Be the first to access mind-blowing experiences with your very own Alpha pass. Unlock a realm like you’ve never seen before. Are you ready
-                                to start your investigation?</p>
-                            <div class="powerwts__object">
-                                <img src="img/power.svg" alt="power">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="cards__sections">
-            <div class="container">
-                <div class="row g-lg-5">
-                    <div class="col-lg-4">
-                        <div class="card__main">
-                            <img src="img/card1-new.png" class="cardStatic" alt="card">
-                            <video muted class="cardVideo">
-                        <source src="img/exclusive-access.mp4" type="video/mp4">
-                      </video>
-                            <!-- <img src="img/card1.png" alt="card1"> -->
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card__main exquisite-access-to-nft">
-                            <img src="img/card2-new.png" class="cardStatic" alt="card">
-                            <video muted class="cardVideo">
-                        <source src="img/exquisite-access-to-nft.mp4" type="video/mp4">
-                      </video>
-                            <!-- <img src="img/card2.png" alt="card1"> -->
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card__main ecstasy-access-to-nft">
-                            <img src="img/card3-new.png" class="cardStatic" alt="card">
-                            <video muted class="cardVideo">
-                        <source src="img/ecstasy-access-to-nft.mp4" type="video/mp4">
-                      </video>
-                            <!-- <img src="img/card3.png" alt="card1"> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="passUtility">
-            <div class="container">
-                <div class="custom__price__row">
-                    <div class="price__main priceTitle">
-                        <h3>PASS UTILITY</h3>
-                        <ul>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                        </ul>
-                    </div>
-                    <div class="price__main exclusive">
-                        <h3>EXCLUSIVE</h3>
-                        <ul>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                        </ul>
-                    </div>
-                    <div class="price__main exquisite">
-                        <h3>EXQUISITE</h3>
-                        <ul>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                        </ul>
-                    </div>
-                    <div class="price__main ecastasy">
-                        <h3>ECSTASY</h3>
-                        <ul>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                            <li><i class="far fa-check-circle"></i></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="countdowns__section">
-            <div class="count__paint__object">
-                <img src="img/paint.png" alt="paint">
-            </div>
-            <div class="container">
-                <div class="timers__remain">
-                    <p>POLICE DEPT</p>
-                    <div id="timer" class="timerwrap">
-                        <div id="days" class="timer"></div>
-                        <div id="hours" class="timer"></div>
-                        <div id="minutes" class="timer"></div>
-                    </div>
-                </div>
-                <div class="mint__now__text">
-                    <h2>MINT NOW AT</h2>
-                    <p>0.06 ETH</p>
-                </div>
-                <div class="mint__increment">
-                    <div class="counter">
-                        <input class="counter__input" type="text" value="1" name="counter" size="5" readonly="readonly" /><a class="counter__increment" href="#">+</a><a class="counter__decrement" href="#">&ndash;</a>
-                    </div>
-                    <div class="mintButton">
-                        <button type="#" class="theme-btn">Mint</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer class="footer">
-            <div class="container">
-                <h4>GOT DEEP ROOTED FOMO? <span>GET UPDATES</span></h4>
-                <div class="newsletter">
-                    <form action="#">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL ADDRESS">
-                        <button type="submit" class="theme-btn">SUBMIT</button>
-                    </form>
-                </div>
-                <ul class="socialfooter">
-                    <li>
-                        <a href="#"><img src="img/gameicon.svg" alt="game"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="img/twitter.svg" alt="twitter"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="img/instagram.svg" alt="instagram"></a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-        <div class="paintfooter">
-            <img src="img/bodyright.png" alt="body">
+      <section class="banner__section">
+        <div class="banner__head">
+          <img src="img/banner-head.svg" alt="banner-header" />
         </div>
+        <div class="banner__crimeBar">
+          <a href="#">
+            <img src="img/banner-upperbar.png" alt="banner-uppercase" />
+          </a>
+        </div>
+      </section>
+      <section class="whatsup__section">
+        <div class="cross__wts__object">
+          <img src="img/cross.svg" alt="cross" />
+        </div>
+        <div class="rightwts__object">
+          <img src="img/wtsright.png" alt="ong" />
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="skull__whts">
+                <img src="img/skull.png" alt="skull" />
+                <div class="tears">
+                  <img src="img/2_Tears.png" alt="tears" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="whtsupp__text">
+                <div class="hereText">HERE'S</div>
+                <h1>WHAT'S <span class="d-block">UP</span></h1>
+                <p>
+                  You’re used to things being super plastic, wait till you have
+                  a taste of Super Alpha. Be the first to access mind-blowing
+                  experiences with your very own Alpha pass. Unlock a realm like
+                  you’ve never seen before. Are you ready to start your
+                  investigation?
+                </p>
+                <div class="powerwts__object">
+                  <img src="img/power.svg" alt="power" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cards__sections">
+        <div class="container">
+          <div class="row g-lg-5">
+            <div class="col-lg-4">
+              <div class="card__main">
+                <img src="img/card1-new.png" class="cardStatic" alt="card" />
+                <video muted class="cardVideo">
+                  <source src="img/exclusive-access.mp4" type="video/mp4" />
+                </video>
+                <!-- <img src="img/card1.png" alt="card1"> -->
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card__main exquisite-access-to-nft">
+                <img src="img/card2-new.png" class="cardStatic" alt="card" />
+                <video muted class="cardVideo">
+                  <source
+                    src="img/exquisite-access-to-nft.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <!-- <img src="img/card2.png" alt="card1"> -->
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card__main ecstasy-access-to-nft">
+                <img src="img/card3-new.png" class="cardStatic" alt="card" />
+                <video muted class="cardVideo">
+                  <source
+                    src="img/ecstasy-access-to-nft.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <!-- <img src="img/card3.png" alt="card1"> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="passUtility">
+        <div class="container">
+          <div class="custom__price__row">
+            <div class="price__main priceTitle">
+              <h3>PASS UTILITY</h3>
+              <ul>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+              </ul>
+            </div>
+            <div class="price__main exclusive">
+              <h3>EXCLUSIVE</h3>
+              <ul>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+              </ul>
+            </div>
+            <div class="price__main exquisite">
+              <h3>EXQUISITE</h3>
+              <ul>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+              </ul>
+            </div>
+            <div class="price__main ecastasy">
+              <h3>ECSTASY</h3>
+              <ul>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+                <li><i class="far fa-check-circle"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="countdowns__section">
+        <div class="count__paint__object">
+          <img src="img/paint.png" alt="paint" />
+        </div>
+        <div class="container">
+          <div class="timers__remain">
+            <p>POLICE DEPT</p>
+            <div id="timer" class="timerwrap">
+              <div id="days" class="timer"></div>
+              <div id="hours" class="timer"></div>
+              <div id="minutes" class="timer"></div>
+            </div>
+          </div>
+          <div class="mint__now__text">
+            <h2>MINT NOW AT</h2>
+            <p>0.06 ETH</p>
+          </div>
+          <div class="mint__increment">
+            <div class="counter">
+              <input
+                class="counter__input"
+                type="text"
+                value="1"
+                name="counter"
+                size="5"
+                readonly="readonly"
+              /><a class="counter__increment" href="#">+</a
+              ><a class="counter__decrement" href="#">&ndash;</a>
+            </div>
+            <div class="mintButton">
+              <button type="#" class="theme-btn">Mint</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <h4>GOT DEEP ROOTED FOMO? <span>GET UPDATES</span></h4>
+          <div class="newsletter">
+            <form action="#">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="EMAIL ADDRESS"
+              />
+              <button type="submit" class="theme-btn">SUBMIT</button>
+            </form>
+          </div>
+          <ul class="socialfooter">
+            <li>
+              <a href="#"><img src="img/gameicon.svg" alt="game" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/twitter.svg" alt="twitter" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/instagram.svg" alt="instagram" /></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <div class="paintfooter">
+        <img src="img/bodyright.png" alt="body" />
+      </div>
     </div>
-
 
     <script src="./js/jquery-3.1.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
-
-</body>
-
+  </body>
 </html>
