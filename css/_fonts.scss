@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'Artico-CondensedBold';
+    src: url('../fonts/ArticoCondensedBold.eot');
+    src: url('../fonts/ArticoCondensedBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ArticoCondensedBold.woff2') format('woff2'),
+        url('../fonts/ArticoCondensedBold.woff') format('woff'),
+        url('../fonts/ArticoCondensedBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Artico-ExtraCondBold';
+    src: url('../fonts/ArticoExtraCondBold.eot');
+    src: url('../fonts/ArticoExtraCondBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ArticoExtraCondBold.woff2') format('woff2'),
+        url('../fonts/ArticoExtraCondBold.woff') format('woff'),
+        url('../fonts/ArticoExtraCondBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
