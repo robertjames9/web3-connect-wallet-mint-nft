@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.1-rc.0/web3.min.js" integrity="sha512-Ui9NE+/XdhwxssTrWetwWgpwpZJCLgTpB2dgkq+xe3O7lmZEJe+2rw3OT3YbYIUCQWH5dOO8ObLOYmbUVpPBgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bignumber.js@9.0.2/bignumber.min.js"></script>
 </head>
 
 <body>
@@ -750,16 +751,18 @@
                             contract = new web3.eth.Contract(ABI, contractAddress);
 
                             let accounts;
-                            async function functionName() {
-                                accounts = await web3.eth.getAccounts();
-                            }
                             document.getElementById('mint').onclick = async() => {
+                                accounts = await web3.eth.getAccounts();
                                 var mintAmount = Number(document.querySelector("[name=mintAmount]").value);
-                                var price = Number(await contract.methods.price().call());
-                                var totalAmount = price * mintAmount;
-                                contract.methods.safeMint(accounts, mintAmount).send({
-                                    from: accounts,
-                                    value: toString(totalAmount)
+                                var price = new BigNumber(await contract.methods.price().call());
+                                console.log({
+                                    mintAmount,
+                                    price: price.toString()
+                                });
+                                var totalAmount = price.multipliedBy(mintAmount);
+                                contract.methods.safeMint(accounts[0], mintAmount).send({
+                                    from: accounts[0],
+                                    value: totalAmount.toString()
                                 });
                             }
                         </script>
