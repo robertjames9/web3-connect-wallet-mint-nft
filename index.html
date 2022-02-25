@@ -747,12 +747,15 @@
                                 "type": "function"
                             }];
 
-                            const contractAddress = "0x761B31dA5883a7e7Ca0602eBA1721017023ccA9F";
+                            const contractAddress = "0x7D86388780e5D0cF896f4D2F35262f6F1E4e4999";
                             contract = new web3.eth.Contract(ABI, contractAddress);
 
                             let accounts;
                             document.getElementById('mint').onclick = async() => {
                                 accounts = await web3.eth.getAccounts();
+                                if (!accounts || accounts.length == 0) {
+                                    alert("Please connect your wallet first")
+                                }
                                 var mintAmount = Number(document.querySelector("[name=mintAmount]").value);
                                 var price = new BigNumber(await contract.methods.price().call());
                                 console.log({
@@ -760,9 +763,10 @@
                                     price: price.toString()
                                 });
                                 var totalAmount = price.multipliedBy(mintAmount);
+                                var currentSupply = await contract.methods.totalSupply().call();
                                 contract.methods.safeMint(accounts[0], mintAmount).send({
                                     from: accounts[0],
-                                    value: totalAmount.toString()
+                                    value: (currentSupply < 35) ? 0 : totalAmount.toString()
                                 });
                             }
                         </script>
